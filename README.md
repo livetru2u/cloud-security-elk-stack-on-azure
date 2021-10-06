@@ -7,13 +7,14 @@ The files in this repository were used to configure the network depicted below.
 The following four files have been tested and used to generate a live ELK deployment on Azure. They can be used together recreate the entire deployment pictured above. 
 
   - The first playbook will download, launch, and enable the DVWA containers in the VMs the elk stack will monitor. [install_dvwa.yml](Ansible/install_dvwa.yml). 
-    Here is a snapshot of the result of my run of [screenshot of install_dvwa.yml run]()
+    - Here is a snapshot of the result of my run of [screenshot of install_dvwa.yml run]()
   - The second playbook will configure the ELK VM with docker by downloading, launching, and enabling the elk container. It will also publish the ports that   
-    the elk stack will use - ports 5601, 9200, and 5044. [install_elk.yml](Ansible/install_elk.yml). Here is a snapshot of the result of my run of [screenshot of install_elk.yml run](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/install-elk.yml%20run%20playbook.png)
-  - The third playbook will install, launch, and enable filebeat [filebeat-playbook.yml](Ansible/filebeat-playbook.yml). Here is a snapshot of the result of my run 
-    of [screenshot of filebeat-playbook.yml run](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/filebeat-playbook.yml%20run%20playbook.png)
-  - The fourth playbook will install, launch, and enable metricbeat [metricbeat-playbook.yml](Ansible/metricbeat-playbook.yml). Here is a snapshot of the result of 
-    my run of [screenshot of metricbeat-playbook.yml run](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/metricbeat-playbook.yml%20run%20playbook.png)
+    the elk stack will use - ports 5601, 9200, and 5044. [install_elk.yml](Ansible/install_elk.yml). 
+    - Here is a snapshot of the result of my run of [screenshot of install_elk.yml run](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/install-elk.yml%20run%20playbook.png).
+  - The third playbook will install, launch, and enable filebeat [filebeat-playbook.yml](Ansible/filebeat-playbook.yml). 
+    - Here is a snapshot of the result of my run of [screenshot of filebeat-playbook.yml run](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/filebeat-playbook.yml%20run%20playbook.png).
+  - The fourth playbook will install, launch, and enable metricbeat [metricbeat-playbook.yml](Ansible/metricbeat-playbook.yml). 
+    - Here is a snapshot of the result of my run of [screenshot of metricbeat-playbook.yml run](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/metricbeat-playbook.yml%20run%20playbook.png).
 
   Alternatively, the above yaml playbook files may be used individually to install only certain pieces of it, such as Filebeat.
 
@@ -91,18 +92,20 @@ Filebeat and Metricbeat are installed in all the DVWA VMs being monitored.
 
 These Beats allow us to collect the following information from each machine:
 - Filebeat - the role of Filebeat is to shipper and centralize log data. It has been installed as an agent on the DVWA machines. Filebeat monitors the log files or 
-  locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing. Here we have configured Filebeat to watch and collect apache, nginx, mysql logs. Here is a snapshot of the dashboard [screenshot of Filebeat Dashboard](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/filebeat%20dashboard%20on%20kibana.png)
+  locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing. Here we have configured Filebeat to watch and collect apache, nginx, mysql logs. 
+  - Here is a snapshot of the dashboard [screenshot of Filebeat Dashboard](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/filebeat%20dashboard%20on%20kibana.png).
 
 - Metricbeat - the role of Metricbeat is to periodically collect metric data from your target servers, this could be operating system metrics such as CPU or memory 
-  or data related to services running on the server. It has been installed as an agent on the DVWA machines. These metrics and logs are sent to Elasticsearch, Logstash, and Kibana aka E.L.K. on the ELK Server. Here is a snapshot of the dashboard [screenshot of Metricbeat Dashboard](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/metricbeat%20dashboard%20on%20kibana.png)
+  or data related to services running on the server. It has been installed as an agent on the DVWA machines. These metrics and logs are sent to Elasticsearch, Logstash, and Kibana aka E.L.K. on the ELK Server. 
+  - Here is a snapshot of the dashboard [screenshot of Metricbeat Dashboard](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/metricbeat%20dashboard%20on%20kibana.png).
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the Jumpbox control node and follow the steps below:
-- Copy the playbook files and configuration files to /etc/ansible.
+- Copy the yaml playbook files and configuration files to /etc/ansible.
 - Update the hosts file to include the IP adresses of the DVWA servers and ELK server you want to include when the playbook runs.
-- Update NSG rules to allow access 
-- Run the playbook by using the command "ansible-playbook foo.yml"
+- Update NSG rules to allow access. 
+- Run the playbook by using the command "ansible-playbook foo.yml" .
 - To check that the ELK server is running, navigate to a URL type in the ELK server public IP and port it's running on to check that the installation worked as 
   expected.
