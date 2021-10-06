@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-["Diagram Automated ELK Stack Deployment on Azure.png"](Images/"Diagram Automated ELK Stack Deployment on Azure.png")
+[Diagram Automated ELK Stack Deployment on Azure - Christina Chen Bertucci](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/Diagram%20Automated%20ELK%20Stack%20Deployment%20on%20Azure.png)
 
 The following files have been tested and used to generate a live ELK deployment on Azure. They can be used together recreate the entire deployment pictured above. 
 
