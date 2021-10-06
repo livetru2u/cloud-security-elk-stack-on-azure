@@ -46,7 +46,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | VM 1       | DVWA     | 10.0.0.5   | Linux - Ubuntu 20.04 LTS Gen 1    |
 | VM 2       | DVWA     | 10.0.0.6   | Linux - Ubuntu 20.04 LTS Gen 1    |
 | VM 3       | DVWA     | 10.0.0.8   | Linux - Ubuntu 20.04 LTS Gen 1    |
-| ELK VM     | E.L.K.   | 10.1.0.4   | Linux - ubuntu 20.04 LTS Gen 1    | 
+| ELK VM     | E.L.K.   | 10.1.0.4   | Linux - Ubuntu 20.04 LTS Gen 1    | 
 
 ### Access Policies
 
