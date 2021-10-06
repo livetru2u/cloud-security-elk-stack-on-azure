@@ -12,7 +12,7 @@ The following files have been tested and used to generate a live ELK deployment 
   - The third playbook will install, launch, and enable filebeat [filebeat-playbook.yml](Ansible/filebeat-playbook.yml)
   - The fourth playbook will install, launch, and enable metricbeat [metricbeat-playbook.yml](Ansible/metricbeat-playbook.yml)
 
-  Alternatively, the above yaml playbook files may be used individyally to install only certain pieces of it, such as Filebeat.
+  Alternatively, the above yaml playbook files may be used individually to install only certain pieces of it, such as Filebeat.
 
 These documents contain the following details:
 - Description of the Topology
@@ -28,11 +28,14 @@ These documents contain the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+- ______TODO: What aspect of security do load balancers protect? The load balancer protects the group of servers in the backend pool from high latency issues by redirecting traffic to the other available servers to balance out variances in incoming traffic. The load balancer can also protect from any downtime to occur if there is total failure of a single server by redirecting traffic to remaining available servers. 
+
+What is the advantage of a jump box?_   or 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+- _TODO: What does Filebeat watch for?_ Filebeat collects data about specific files on remote machines and must be installed on the Virtual Machine(s) you are 
+  monitoring. The type of data collected is configured by the us and what we would like to monitor - for example apache, nginx, mysql, etc 
+- _TODO: What does Metricbeat record?_ Metricbeat sends out metrics of the Virtual Machine(s) you are monitoring. It must also be installed on the machine you wish to montitor. These metrics and logs are sent to Elasticsearch, Logstash, and Kibana aka ELK on the ELK Server 
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
