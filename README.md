@@ -102,14 +102,8 @@ These Beats allow us to collect the following information from each machine:
 1. Filebeat - the role of Filebeat is to shipper and centralize log data. It has been installed as an agent on the DVWA machines. Filebeat monitors the log files 
    or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing. Here we have configured Filebeat to watch and collect apache, nginx, mysql logs. 
    
-   Screenshot of Filebeat Dashboard 
-   ![of Filebeat Dashboard](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/filebeat%20dashboard%20on%20kibana.png).
-
 2. Metricbeat - the role of Metricbeat is to periodically collect metric data from your target servers, this could be operating system metrics such as CPU or 
    memory or data related to services running on the server. It has been installed as an agent on the DVWA machines. These metrics and logs are sent to Elasticsearch, Logstash, and Kibana aka E.L.K. on the ELK Server. 
-   
-   Screenshot of Metricbeat Dashboard
-   ![of Metricbeat Dashboard](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/metricbeat%20dashboard%20on%20kibana.png).
 
 ### Using the Playbook
 
@@ -122,3 +116,9 @@ SSH into the Jumpbox control node and follow the steps below:
 - Run the playbook by using the command "ansible-playbook foo.yml" .
 - To check that the ELK server is running, navigate to a URL type in the ELK server public IP and port it's running on to check that the installation worked as 
   expected.
+
+ - Here is a screenshot of my Filebeat Dashboard from ELK VM 20.83.25.90:5601
+   ![of Filebeat Dashboard](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/filebeat%20dashboard%20on%20kibana.png).
+
+ - Here is a screenshot of my Metricbeat Dashboard from ELK VM 20.83.25.90:5601
+   ![of Metricbeat Dashboard](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/metricbeat%20dashboard%20on%20kibana.png).
