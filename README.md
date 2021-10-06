@@ -12,7 +12,7 @@ The following files have been tested and used to generate a live ELK deployment 
   - The third playbook will install, launch, and enable filebeat [filebeat-playbook.yml](Ansible/filebeat-playbook.yml)
   - The fourth playbook will install, launch, and enable metricbeat [metricbeat-playbook.yml](Ansible/metricbeat-playbook.yml)
 
-  Alternatively, the above yaml playbook files may be used individyally to install only certain pieces of it, such as Filebeat.
+  Alternatively, the above yaml playbook files may be used individually to install only certain pieces of it, such as Filebeat.
 
 These documents contain the following details:
 - Description of the Topology
@@ -43,7 +43,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | VM 1       | DVWA     | 10.0.0.5   | Linux - Ubuntu 20.04 LTS Gen 1    |
 | VM 2       | DVWA     | 10.0.0.6   | Linux - Ubuntu 20.04 LTS Gen 1    |
 | VM 3       | DVWA     | 10.0.0.8   | Linux - Ubuntu 20.04 LTS Gen 1    |
-| ELK VM     | E.L.K.   | 10.1.0.4   | Linux - ubuntu 20.04 LTS Gen 1    | 
+| ELK VM     | E.L.K.   | 10.1.0.4   | Linux - Ubuntu 20.04 LTS Gen 1    | 
 
 ### Access Policies
 
