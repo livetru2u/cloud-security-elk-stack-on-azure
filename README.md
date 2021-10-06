@@ -2,15 +2,15 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Christina Chen Bertucci - Automated ELK Stack Deployment on Azure](Images/Diagram Automated ELK Stack Deployment on Azure)
+![Christina Chen Bertucci - Automated ELK Stack Deployment on Azure](Images/Diagram Automated ELK Stack Deployment on Azure.png)
 
 The following files have been tested and used to generate a live ELK deployment on Azure. They can be used together recreate the entire deployment pictured above. 
 
   - The first playbook will download, launch, and enable the DVWA containers in the VMs the elk stack will monitor. [install_dvwa.yml](Ansible/install_dvwa.yml)
   - The second playbook will configure the ELK VM with docker by downloading, launching, and enabling the elk container. It will also publish the ports that   
-    the elk stack will use - ports 5601, 9200, and 5044. [install_elk.yml] (Ansible/install_elk.yml)
-  - The third playbook will install, launch, and enable filebeat [filebeat-playbook.yml] (Ansible/filebeat-playbook.yml)
-  - The fourth playbook will install, launch, and enable metricbeat [metricbeat-playbook.yml] (Ansible/metricbeat-playbook.yml)
+    the elk stack will use - ports 5601, 9200, and 5044. [install_elk.yml](Ansible/install_elk.yml)
+  - The third playbook will install, launch, and enable filebeat [filebeat-playbook.yml](Ansible/filebeat-playbook.yml)
+  - The fourth playbook will install, launch, and enable metricbeat [metricbeat-playbook.yml](Ansible/metricbeat-playbook.yml)
 
   Alternatively, the above yaml playbook files may be used individyally to install only certain pieces of it, such as Filebeat.
 
