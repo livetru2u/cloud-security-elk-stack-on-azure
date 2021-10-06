@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-[Diagram Automated ELK Stack Deployment on Azure - Christina Chen Bertucci](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/Diagram%20Automated%20ELK%20Stack%20Deployment%20on%20Azure.png)
+![Diagram Automated ELK Stack Deployment on Azure - Christina Chen Bertucci](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/Diagram%20Automated%20ELK%20Stack%20Deployment%20on%20Azure.png)
 
 The following files have been tested and used to generate a live ELK deployment on Azure. They can be used together recreate the entire deployment pictured above. 
 
@@ -80,7 +80,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![screenshot of docker ps output](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/docker%20ps%20elk%20successful.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
