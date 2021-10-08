@@ -8,10 +8,9 @@ The following four playbooks have been tested and used to generate a live ELK de
 
 1. The first playbook will download, launch, and enable the DVWA containers in the VMs the elk stack will monitor. 
    - Playbook file [install_dvwa.yml](Ansible/install_dvwa.yml). 
-   - Screenshot [of install_dvwa.yml run](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/install-dvwa.yml%20run%20playbook.png). *Formerly pentest.yml. Name was changed to install_dvwa.yml for context.
+   - Screenshot [of install_dvwa.yml run](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/install-dvwa.yml%20run%20playbook.png). *file name pentest.yml was changed to install_dvwa.yml for context.
 
-2. The second playbook will configure the ELK VM with docker by downloading, launching, and enabling the elk container. It will also publish the ports that   
-    the elk stack will use - ports 5601, 9200, and 5044. 
+2. The second playbook will configure the ELK VM with docker by downloading, launching, and enabling the elk container. It will also publish the ports that the elk stack will use - ports 5601, 9200, and 5044. 
    - Playbook file [install_elk.yml](Ansible/install_elk.yml). 
    - Screenshot [of install_elk.yml run](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/install-elk.yml%20run%20playbook.png).
 
