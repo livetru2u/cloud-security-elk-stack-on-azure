@@ -11,7 +11,7 @@ The following four playbooks have been tested and used to generate a live ELK de
    - Screenshot [of install_dvwa.yml run](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/install-dvwa.yml%20run%20playbook.png). *file name pentest.yml was changed to install_dvwa.yml for context.
 
 2. The second playbook will configure the ELK VM with docker by downloading, launching, and enabling the elk container. It will also publish the ports that the elk stack will use - ports 5601, 9200, and 5044. 
-   - Playbook file [install_elk.yml](Ansible/install_elk.yml). 
+   - Playbook file [install_elk.yml](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Ansible/install-elk.yml).
    - Screenshot [of install_elk.yml run](https://github.com/livetru2u/cloud-security-elk-stack-on-azure/blob/main/Images/install-elk.yml%20run%20playbook.png).
 
 3. The third playbook will install, launch, and enable filebeat 
